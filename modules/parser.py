@@ -48,3 +48,7 @@ class Parser:
         if ";" in command:
             return command.split(";")[1]
         return "null"
+
+    def reset(self):
+        self.read = -1
+        self.current = ""
