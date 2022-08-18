@@ -30,7 +30,7 @@ class SymbolTable:
         self.table[symbol] = address
 
     def contains(self, symbol):
-        return symbol in self
+        return symbol in self.table
 
     def get_address(self, symbol):
         return self.table[symbol]
