@@ -10,7 +10,7 @@ class Parser:
         self.current = ""
 
     def has_more_commands(self):
-        return (len(self.lines) - self.read) > 0
+        return (len(self.lines) - self.read) > 1
 
     def advance(self):
         self.read += 1
